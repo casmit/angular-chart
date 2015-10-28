@@ -18,6 +18,7 @@
       addIdentifier();
       addInlineStyle();
       chartService = AngularChartService.getInstance(configuration, $scope);
+      $element.data('chart', chartService.chart);
       registerDestroyListener();
     }
 
